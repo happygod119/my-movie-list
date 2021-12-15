@@ -9,7 +9,6 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" type="text/css" href="/style.css" />
     <!-- Font Awesome -->
     <script
       defer
@@ -51,35 +50,33 @@
     </nav>
 
     <div class="container mt-5">
-      <div class="d-flex">
+      <div class="d-flex justify-content-between">
         <!-- Search Bar -->
-        <form
-          class="row row-cols-lg-auto g-3 align-items-center mb-2"
-          id="search-form"
-        >
-          <div class="col-12">
-            <label class="visually-hidden" for="search-input">
-              Search Keyword
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              id="search-input"
-              placeholder="Keyword..."
-            />
-          </div>
-          <div class="col-12">
-            <button
-              type="submit"
-              class="btn btn-primary"
-              id="search-submit-button"
-            >
-              Search
-            </button>
-          </div>
-        </form>
+        <div class="container">
+          <form class="row" id="search-form">
+            <div class="col-sm-6">
+              <label class="visually-hidden" for="search-input"></label>
+              <input
+                type="text"
+                class="form-control"
+                id="search-input"
+                placeholder="Keyword..."
+              />
+            </div>
+            <div class="col-sm-4">
+              <button
+                type="submit"
+                class="btn btn-primary btn-lg"
+                id="search-submit-button"
+              >
+                Search
+              </button>
+            </div>
+          </form>
+        </div>
+
         <!-- Change Mode -->
-        <div class="ms-auto m-2" id="change-mode">
+        <div class="d-flex justify-content-end" id="change-mode">
           <i
             class="fa fa-th fa-2x fa-pull-left fa-border"
             aria-hidden="true"
